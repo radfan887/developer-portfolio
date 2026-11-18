@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import { translations } from "./data/translations";
 
@@ -43,6 +44,8 @@ export default function App() {
       </main>
 
       <Footer t={t} />
+
+      <SpeedInsights />
     </div>
   );
 }
